@@ -87,8 +87,15 @@ body * {
     margin-bottom: 10px;
 }
 
+.textfield > a{
+    text-decoration: none;
+    color: aquamarine;
+    padding: 5px;
+    font-size: 13px;
+}
 .textfield > input::placeholder{
     color: #ffffff; 
+    font-size: 13px;
 }
 
 .btn-login{
@@ -133,4 +140,5 @@ body * {
     .card-login{
         width: 90%;
     }
+    
 }
