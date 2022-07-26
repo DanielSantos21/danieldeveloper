@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 3vw;
+    color: aquamarine;
+}
+
+.img-login{
+    width: 30vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    padding: 30px 35px;  
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 80px #030303;
+}
+
+.card-login > h1{
+    color: #7fffd4;
+    font-weight: 800; 
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #ebeaee;
+    font-size: 12pt;
+    box-shadow: 0px 4px 40px #030303;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #ebeaee;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #ffffff; 
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:#2f2841;
+    background-color: aquamarine;
+    cursor: pointer;
+    box-shadow: 0px 5px 40px -12px aqua;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-img-login{
+        width: 50vh;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
