@@ -12,27 +12,29 @@
 				<h1>Registar Conta<br></h1>
 				<img src="anima.svg" class="img-login">
 			</div>
-			<div class="right-login">
-				<div class="card-login">
-				<h1>Registar</h1>
-				<div class="textfield">
-					<label for="usuario">E-mail</label>
-					<input type="text" name="gmail" placeholder="E-mail">
+			<form action="connect.php" method="post">
+				<div class="right-login">
+					<div class="card-login">
+					<h1>Registar</h1>
+					<div class="textfield">
+						<label for="usuario">E-mail</label>
+						<input type="text" name="gmail" id="gmail" placeholder="E-mail">
+					</div>
+					<div class="textfield">
+						<label for="usuario">Username</label>
+						<input type="text" name="usuario" id="usuario" placeholder="Username">
+					</div>
+					<div class="textfield">
+						<label for="senha">Password</label>
+						<input type="password" name="senha" id="senha" placeholder="Password">
+					</div>
+					<div class="textfield">
+						<a href="index.html">Login</a>
+					</div>
+					<button class="btn-login">Registar</button>
 				</div>
-				<div class="textfield">
-					<label for="usuario">Username</label>
-					<input type="text" name="usuario" placeholder="Username">
 				</div>
-				<div class="textfield">
-					<label for="senha">Password</label>
-					<input type="password" name="senha" placeholder="Password">
-				</div>
-				<div class="textfield">
-					<a href="index.html">Login</a>
-				</div>
-				<button class="btn-login">Registar</button>
-			</div>
-			</div>
+			</form>
 		</div>
 	</body>
 </html>
